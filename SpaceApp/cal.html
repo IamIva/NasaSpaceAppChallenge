@@ -1,0 +1,83 @@
+
+<link rel = "stylesheet" type = "text/css" href = "css.css"/>
+<script type="text/javascript" src="cal.js"></script>
+
+  <div class="box">
+  <div class="calc-outer-wrap">
+  <div id="form-error" style="display:none;"></div>
+  <form class="calc-form" id="calc-form">
+    <div class="form-fields">
+
+      <div class="field-outer">
+        <label for="distance" class="top-label">How far do you live from your work/study place?</label>
+        <div class="field-items">
+          <div class="field field-medium">         
+            <input type="text" name="distance" id="distance" inputmode="numeric" pattern="[0-9]*">
+            <label for="distance">km</label>
+          </div>
+        </div>
+      </div>
+          
+          <div class="field-outer">
+            <label for="transport" class="top-label">What transport do you use?:</label>
+            <div class="field-items"> 
+              <div class="field field-medium">
+            <select name="transport">
+              <option value="car">Car</option>
+              <option value="moto">Motorcycle</option>
+              <option value="public">Public Transport</option>
+              <option value="none">None</option>
+              >
+              
+                    
+            </select>
+              </div>
+            </div>
+            </div><!--  /.field-items -->
+    
+        <div class="field-outer">
+        <label for="fuel" class="top-label">In case of car, what fuel do you use?</label>
+          <div class="field-items">
+            <div class="field-medium">
+              <select name="fuel">
+              <option value="eletric">electric</option>
+              <option value="petrol">petrol</option>
+              <option value="diesel">diesel</option>
+              <option value="none">none</option>          
+              </select>
+            <div class="field-outer">
+              <label for="coffee" class="top-label">How much coffee do you drink?:</label>
+              <div class="field-items">
+                <div class="field">
+                  <input type="text" name="coffee" id="coffee" inputmode="numeric" pattern="[0-9]*">
+                  <label for="coffee">cups per day</label>
+                </div><!--  /.field -->
+                
+                    
+              </div><!--  /.field-items -->
+            </div><!--  /.field-outer -->
+      
+            <div class="field-outer">
+              <label for="cigarettes" class="top-label">How many cigarettes do you smoke per a day?</label>
+              <div class="field-items">
+                <div class="field field-large">
+                  <input type="text" name="cigarettes" id="cigarettes" inputmode="numeric" pattern="[0-9]*">
+                </div><!--  /.field-large -->
+                
+              </div><!--  /.field-items -->
+            </div><!--  /.field-outer -->
+          <div class="btn-wrap field-outer">
+            <button class="form-submit">Calculate</button>
+          </div>
+          </div><!--  /.form fields -->
+
+
+          </div> 
+        </div><!--  /.field-items -->
+      </div><!--  /.field-outer -->
+
+
+  </form>
+  <div id="results" style="display:none;"></div>
+  </div><!--  /.calc-outer-wrap -->
+  </div>
